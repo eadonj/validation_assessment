@@ -55,7 +55,7 @@ input {
 }
 
 .errors {
-  color: #C0392B;
+  color: #333;
   margin: 10px auto;
   padding: 5px 0;
   width: 250px;

@@ -45,6 +45,10 @@ $(document).ready(function () {
 			  if (response[i] == "Email not valid email address") {
 		    	$('#form_email').append("<p class='errors'>Email not valid email address</p>");
 			  }
+			  if (response[i] == "Date can't be blank") {
+			  	console.log("ind date check")
+		    	$('#form_date').append("<p class='errors'>Date can't be blank</p>");
+			  }
 			  if (response[i] == "Date cannot be in the past") {
 			  	console.log("ind date check")
 		    	$('#form_date').append("<p class='errors'>Date cannot be in the past</p>");
