@@ -1,0 +1,13 @@
+<% if @errs %>
+  <% @errs.each do |err| %>
+  <p> <%= err %> </p>
+  <% end %>
+<% end %>
+
+<form action="/events/create" method="post">
+  <input type="text" name="event[title]" placeholder="title">
+  <input type="text" name="event[organizer_name]" placeholder="organizer name">
+  <input type="text" name="event[organizer_email]" placeholder="organizer email">
+  <input type="date" name="event[date]" placholder="date">
+  <input type="submit">
+</form>  
