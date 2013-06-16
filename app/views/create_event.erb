@@ -4,10 +4,16 @@
   <% end %>
 <% end %>
 
-<form action="/events/create" method="post">
-  <input type="text" name="event[title]" placeholder="title">
-  <input type="text" name="event[organizer_name]" placeholder="organizer name">
-  <input type="text" name="event[organizer_email]" placeholder="organizer email">
-  <input type="date" name="event[date]" placholder="date">
-  <input type="submit">
-</form>  
+<div id="create_form">
+	<form id="new_event" action="/events/create" method="post">
+		<div id="form_title"></div>
+	  <input type="text" name="event[title]" placeholder="title">
+    <div id="form_name"></div>
+	  <input type="text" name="event[organizer_name]" placeholder="organizer name">
+	  <div id="form_email"></div>
+	  <input type="text" name="event[organizer_email]" placeholder="organizer email">
+	  <div id="form_date"></div>
+	  <input type="date" name="event[date]" placholder="date">
+	  <input id='submit' type="submit">
+	</form>  
+</div>

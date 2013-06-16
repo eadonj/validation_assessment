@@ -13,12 +13,9 @@ get '/events/new' do
 end
 
 post '/events/create' do
+  content_type :json
+  p "params: #{params}"
   event = Event.new(params[:event])
-  if event.valid?
-    event.save
-    redirect '/'
-  else
-    @errs = event.errors.full_messages
-    erb :create_event 
-  end
+  event.save if event.valid?
+  @errs = event.errors.full_messages.to_json
 end

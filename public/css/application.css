@@ -55,7 +55,14 @@ input {
 }
 
 .errors {
-  color: red;
+  color: #C0392B;
+  margin: 10px auto;
+  padding: 5px 0;
+  width: 250px;
+  background-color: #E74C3C;
+  border-radius: 4px;
+  border: 2px solid #C0392B;
+  text-align: center;
 }
 
 form.quirks {
@@ -72,4 +79,21 @@ form.quirks {
   text-align: right;
   margin-right: 20px;
   width: 200px;
+}
+
+#create_form{
+  width: 100%;
+  margin: 10px auto;
+}
+
+#new_event input{
+  margin: 10px auto;
+  display: block;
+  width: 250px;
+  border-radius: 4px;
+  height: 30px;
+}
+
+#new_event_error {
+  border: 2px solid #C0392B;
 }
