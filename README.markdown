@@ -1,3 +1,6 @@
+An assessment challenge completed in Week 5 of Dev Bootcamp.  The stretch component is completed.
+
+
 ## Overview
 In order to protect the integrity of your data, you will often need to prevent
 users from creating records with information that doesn't meet your constraints.
